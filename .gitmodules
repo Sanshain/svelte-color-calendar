@@ -1,0 +1,3 @@
+[submodule "color-calendar"]
+	path = color-calendar
+	url = git@github.com:Sanshain/color-calendar.git
