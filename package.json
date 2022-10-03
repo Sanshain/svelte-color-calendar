@@ -1,7 +1,16 @@
 {
-  "name": "svelte-app",
+  "name": "svelte-color-calendar",
+  "keywords": [
+    "svelte",
+    "forms"
+  ],
+  "author": {
+    "name": "Sanshain",
+    "url": "https://github.com/Sanshain"
+  },
+  "homepage": "https://github.com/Sanshain/svelte-color-calendar",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -19,6 +28,7 @@
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-terser": "^7.0.0",
+    "sirv-cli": "^2.0.0",
     "svelte": "^3.0.0",
     "svelte-check": "^2.0.0",
     "svelte-preprocess": "^4.0.0",
@@ -27,6 +37,6 @@
   },
   "dependencies": {
     "color-calendar": "^1.0.7",
-    "sirv-cli": "^2.0.0"
+    "corrected-color-calendar": "^1.2.0"
   }
 }

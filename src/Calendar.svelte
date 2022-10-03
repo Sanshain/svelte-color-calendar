@@ -1,13 +1,19 @@
 <script lang="ts">
     import { onMount } from "svelte";
 	//@ts-ignore
+	import Calendar from "corrected-color-calendar";	
 	// import Calendar from "color-calendar";	
-	import Calendar from "../sub_modules/color-calendar/dist/bundle.cjs";
+	// import Calendar from "../sub_modules/color-calendar/dist/bundle.cjs";
+	// import * as Calendar from "../sub_modules/color-calendar/dist/bundle.cjs";
+
+
 	// import "./theme-glass.css"
 	// import "./theme-basic.css"
 	import "../sub_modules/color-calendar/dist/css/theme-basic.css"
 
+	import { createEventDispatcher } from 'svelte';
 
+	
 	// export let name: string = '';
 	export let placeholder: string = '-';
 	export let selectedDate: Date = null;
@@ -28,6 +34,8 @@
 	 */
 	export let endMonth: Date = null;
 	export let selectInitialDate = true;
+
+	export let onSelect = null;
 	
 
 	$: value = blank ? placeholder : (selectedDate ? selectedDate.toLocaleDateString() : '');
@@ -36,6 +44,7 @@
 	let monthChanged = false;
 	let inited = false;
 
+	const dispatch = createEventDispatcher();
 
 	onMount(() => {		
 		
@@ -46,6 +55,13 @@
 			startMonth,
 			endMonth,
 			selectInitialDate,
+			// eventsData:[
+			// 	{
+			// 		start: '2022-09-17T06:00:00',
+			// 		end: '2022-09-18T20:30:00',
+			// 		name: 'Blockchain 101'
+			// 	}
+			// ],
 			dateChanged: (currentDate?: Date, filteredDateEvents?: object[]) => {
 				
 				if (monthChanged) return monthChanged = false;
@@ -53,7 +69,12 @@
 				if (opened) blank = false;
 
 				selectedDate = currentDate;												
-				opened = false;				
+				opened = false;
+				
+				onSelect && onSelect(currentDate)
+				dispatch('select', {
+					selectedDate
+				})
 			},
 			monthChanged: (currentDate?: Date, filteredDateEvents?: object[]) => {				
 
