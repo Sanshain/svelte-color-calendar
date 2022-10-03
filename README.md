@@ -21,7 +21,8 @@ npm i svelte-color-calendar
 
 - [Svelte](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#svelte)
 - [Preact](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#preact)
-- [Vanila](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#vanila-esm)
+- [Vanila (esm](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#vanila-esm)
+- [Vanila](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#vanila)
 
 ### Svelte:
 
@@ -91,3 +92,7 @@ const app = new Calendar({
 
 export default app;
 ```
+
+### Vanila:
+
+Look up the [Demo](https://coding-style.ru/code_reviews/296/edit)
