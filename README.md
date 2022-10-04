@@ -148,4 +148,4 @@ Look up the [Demo](https://coding-style.ru/code_reviews/296/edit)
 
 `weekdayValues?: string[] = null` - list of week day names
 
-
+---
