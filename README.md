@@ -24,6 +24,12 @@ npm i svelte-color-calendar
     - [Vanila](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#vanila)
 - [Options](#options)
     - [selectedDate](#selecteddate)
+    - [blank](#blank)
+    - [selectInitialDate](#selectinitialdate)
+    - [selectedDate](#placeholder)
+    - [startMonth](#startmonth)
+    - [endMonth](#endmonth)
+    - [onSelect](#onselect)
 
 ## Usage
 
