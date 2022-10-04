@@ -39,8 +39,8 @@
 	/**
 	 * @example: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 	 */
-	export let customShortMonthValues = null;
-	export let customWeekdayValues = null;
+	export let shortMonthValues = null;
+	export let weekdayValues = null;
 
 	export let onSelect = null;
 	
@@ -62,7 +62,7 @@
 			selectInitialDate,
 
 			startMonth, endMonth,			
-			customMonthValues: customShortMonthValues, customWeekdayValues,
+			customMonthValues: shortMonthValues, customWeekdayValues: weekdayValues,
 			// eventsData:[
 			// 	{
 			// 		start: '2022-09-17T06:00:00',
