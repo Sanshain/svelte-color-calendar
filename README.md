@@ -138,6 +138,12 @@ Look up the [Demo](https://coding-style.ru/code_reviews/296/edit)
 
 `onSelect?: (date: Date) => void` - callback triggered when user select date
 
+### customShortMonthValues
 
+`customShortMonthValues?: string[] = null` - list of short months names
+
+### customWeekdayValues
+
+`customWeekdayValues?: string[] = null` - list of week day names
 
 
