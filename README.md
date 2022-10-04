@@ -31,6 +31,8 @@ npm i svelte-color-calendar
     - [startMonth](#startmonth)
     - [endMonth](#endmonth)
     - [onSelect](#onselect)
+    - [shortMonthValues](#shortmonthvalues)
+    - [weekdayValues](#weekdayvalues)
 
 ## Usage
 
@@ -138,12 +140,12 @@ Look up the [Demo](https://coding-style.ru/code_reviews/296/edit)
 
 `onSelect?: (date: Date) => void` - callback triggered when user select date
 
-### customShortMonthValues
+### shortMonthValues
 
-`customShortMonthValues?: string[] = null` - list of short months names
+`shortMonthValues?: string[] = null` - list of short months names
 
-### customWeekdayValues
+### weekdayValues
 
-`customWeekdayValues?: string[] = null` - list of week day names
+`weekdayValues?: string[] = null` - list of week day names
 
 
