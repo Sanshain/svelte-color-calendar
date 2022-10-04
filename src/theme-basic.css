@@ -14,6 +14,11 @@
   font-size: 1rem;
 }
 
+.color-calendar .disable {
+  opacity       : .3;
+  pointer-events: none;
+}
+
 .color-calendar .calendar__header {
   position: relative;
   display: grid;

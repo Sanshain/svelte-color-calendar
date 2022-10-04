@@ -8,8 +8,8 @@
 
 
 	// import "./theme-glass.css"
-	// import "./theme-basic.css"
-	import "../sub_modules/color-calendar/dist/css/theme-basic.css"
+	import "./theme-basic.css"
+	// import "../sub_modules/color-calendar/dist/css/theme-basic.css"
 
 	import { createEventDispatcher } from 'svelte';
 
