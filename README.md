@@ -31,6 +31,8 @@ npm i svelte-color-calendar
     - [startMonth](#startmonth)
     - [endMonth](#endmonth)
     - [onSelect](#onselect)
+    - [customShortMonthValues](#customshortmonthValues)
+    - [customWeekdayValues](#customweekdayvalues)
 
 ## Usage
 
