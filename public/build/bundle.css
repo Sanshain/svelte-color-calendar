@@ -525,4 +525,4 @@
 }
 .color-calendar.basic.color-calendar--small .calendar__body .calendar__picker .calendar__picker-year-option::after {
   height: 40px;
-}.container.svelte-9kqzu9{text-align:center;padding:1em;max-width:240px;margin:0 auto}.input.svelte-9kqzu9{border:1px solid gray;text-align:left;padding:2px 0.5em;border-radius:0.5em;min-height:1.5em;cursor:pointer}#calendar.svelte-9kqzu9{display:none}.opened.svelte-9kqzu9{display:block !important}#calendar.svelte-9kqzu9 .calendar__day-today>.calendar__day-box{--today-color-primary:#999 !important}#calendar.svelte-9kqzu9 .calendar__day-today>.calendar__day-box{background-color:#999 !important;background-color:var(--today-color-primary) !important;box-shadow:0 3px 15px -5px #999 !important;box-shadow:0 3px 15px -5px var(--today-color-primary) !important;transition:0.2s}
+}

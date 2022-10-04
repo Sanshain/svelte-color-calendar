@@ -10,7 +10,19 @@
 	<link rel='stylesheet' type="text/css" href='./global.css'>
 	<link rel='stylesheet' type="text/css" href='./build/bundle.css'>
 
-	<script defer src='./build/bundle.js'></script>
+	<!-- <script defer src='./build/bundle.js'></script> -->
+	<script src='./build/bundle.js'></script>
+	<script>
+		window.onload = () => createCalendar(
+			document.body, 
+			{
+				startMonth: new Date(2021, 11),
+				endMonth: new Date(2022, 11),
+				blank: true,
+				onSelect: date => console.log(date)
+			}
+		)		
+	</script>
 </head>
 
 <body>

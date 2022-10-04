@@ -1,4 +1,4 @@
-var app = (function () {
+var createCalendar = (function () {
     'use strict';
 
     function noop() { }
@@ -692,19 +692,20 @@ var app = (function () {
     	}
     }
 
-    const app = new Calendar_1({
-        target: document.body,
+    const createCalendar = (target, { placeholder = '-', blank, selectedDate, startMonth, endMonth, selectInitialDate = false, onSelect }) => new Calendar_1({
+        target: target,
         props: {
-            placeholder: '-',
-            blank: false,
-            selectedDate: new Date,
-            startMonth: new Date(2021, 11),
-            endMonth: new Date(2022, 11),
-            // selectInitialDate: false
+            onSelect,
+            placeholder,
+            blank,
+            selectedDate: selectedDate || new Date,
+            startMonth,
+            endMonth,
+            selectInitialDate
         }
     });
 
-    return app;
+    return createCalendar;
 
 })();
 //# sourceMappingURL=bundle.js.map

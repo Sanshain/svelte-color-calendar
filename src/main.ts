@@ -1,15 +1,28 @@
 import Calendar from './Calendar.svelte';
 
-const app = new Calendar({
-	target: document.body,
+type CalendarOptions = {
+	placeholder?: string,
+	blank?: boolean,
+	selectedDate?: Date,
+	startMonth?: Date,
+	endMonth?: Date,
+	selectInitialDate?: false,
+	onSelect?: CustomEvent<{ selectedDate: Date }>
+};
+
+type CalendarGenerate = (el: HTMLElement, op: CalendarOptions) => Calendar
+
+const createCalendar: CalendarGenerate = (target: HTMLElement, { placeholder = '-', blank, selectedDate, startMonth, endMonth, selectInitialDate = false, onSelect}) => new Calendar({
+	target: target,
 	props: {
-		placeholder: '-',
-		blank: false,
-		selectedDate: new Date,		
-		startMonth: new Date(2021, 11),
-		endMonth: new Date(2022, 11),
-		// selectInitialDate: false
+		onSelect,
+		placeholder,
+		blank,
+		selectedDate: selectedDate || new Date,
+		startMonth,
+		endMonth,
+		selectInitialDate
 	}
 });
 
-export default app;
+export default createCalendar;
