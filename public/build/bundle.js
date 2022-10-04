@@ -416,13 +416,13 @@ var createCalendar = (function () {
     			t1 = space();
     			div1 = element("div");
     			attr_dev(div0, "class", "input svelte-9kqzu9");
-    			add_location(div0, file, 77, 1, 2430);
+    			add_location(div0, file, 78, 1, 2473);
     			attr_dev(div1, "id", "calendar");
     			attr_dev(div1, "class", "svelte-9kqzu9");
     			toggle_class(div1, "opened", /*opened*/ ctx[0]);
-    			add_location(div1, file, 78, 1, 2514);
+    			add_location(div1, file, 79, 1, 2557);
     			attr_dev(div2, "class", "container svelte-9kqzu9");
-    			add_location(div2, file, 75, 0, 2333);
+    			add_location(div2, file, 76, 0, 2376);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

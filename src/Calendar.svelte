@@ -2,12 +2,13 @@
     import { onMount } from "svelte";
 	//@ts-ignore
 	import Calendar from "corrected-color-calendar";	
-	// import Calendar from "color-calendar";	
+	// import Calendar from "color-calendar";
 	// import Calendar from "../sub_modules/color-calendar/dist/bundle.cjs";
 	// import * as Calendar from "../sub_modules/color-calendar/dist/bundle.cjs";
 
 
 	// import "./theme-glass.css"
+	// TODO gulp task to copy from sub_module:
 	import "./theme-basic.css"
 	// import "../sub_modules/color-calendar/dist/css/theme-basic.css"
 
