@@ -135,7 +135,7 @@ Look up the [Demo](https://coding-style.ru/code_reviews/296/edit)
 
 ### onSelect
 
-`onSelect: CustomEvent<{ selectedDate: Date }>` - callback triggered when user select date
+`onSelect?: (date: Date) => void` - callback triggered when user select date
 
 
 
