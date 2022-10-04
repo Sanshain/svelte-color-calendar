@@ -6,11 +6,9 @@ import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
-// убирает console.log?
-// import strip from '@rollup/plugin-strip';
 
 // const production = !process.env.ROLLUP_WATCH;
-const production = true;
+const production = true
 
 function serve() {
 	let server;
@@ -38,8 +36,8 @@ export default {
 	output: {
 		sourcemap: true,
 		format: 'iife',
-		name: 'createCalendar',
-		file: 'public/build/bundle.js',
+		name: 'app',
+		file: 'public/build/bundle.js'
 	},
 	plugins: [
 		svelte({
@@ -51,7 +49,7 @@ export default {
 		}),
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
-		css({ output: 'bundle.css', sourceMap: true }),
+		css({ output: 'bundle.css' }),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
@@ -70,11 +68,11 @@ export default {
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
-		// !production && serve(),
+		!production && serve(),
 
 		// Watch the `public` directory and refresh the
 		// browser on changes when not in production
-		// !production && livereload('public'),
+		!production && livereload('public'),
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
