@@ -9,6 +9,7 @@ Ready to production calendar with the possibility of limiting the choice of date
 
 - An improved [color-calendar](https://github.com/PawanKolhe/color-calendar) is used under the hood 
 - Possibility of limiting the choice of dates by month
+- Small size - 23.1kb (minified)
 - Easy integration with any framework
 
 ## Installation
