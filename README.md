@@ -17,12 +17,15 @@ Ready to production calendar with the possibility of limiting the choice of date
 npm i svelte-color-calendar
 ```
 
-## Usage
+- [Usage](#usage)
+    - [Svelte](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#svelte)
+    - [Preact](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#preact)
+    - [Vanila (esm](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#vanila-esm)
+    - [Vanila](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#vanila)
+- [Options](#options)
+    - [selectedDate](#selecteddate)
 
-- [Svelte](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#svelte)
-- [Preact](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#preact)
-- [Vanila (esm](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#vanila-esm)
-- [Vanila](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#vanila)
+## Usage
 
 ### Svelte:
 
@@ -96,3 +99,38 @@ export default app;
 ### Vanila:
 
 Look up the [Demo](https://coding-style.ru/code_reviews/296/edit)
+
+
+# Options
+
+### selectedDate
+
+`selectedDate?: Date = new Date` - selected date. By default using today
+
+### blank
+
+`blank?: boolean = true` - use for empty initial value. To achieve the desired effect use `selectInitialDate: false`
+
+### selectInitialDate
+
+`selectInitialDate?: false` - to show or hide current date before selection *(by default today or first day of month will be implicitly highlighted as current before user selection)*
+
+### placeholder
+
+`placeholder?: string = '-'` - has an effect just with `blank = true` - otherwise, the current date will be displayed
+
+### startMonth
+
+`startMonth?: Date` - the date of start month permissible selection
+
+### endMonth
+
+`endMonth?: Date` - the date of end month permissible selection
+
+### onSelect
+
+`onSelect: CustomEvent<{ selectedDate: Date }>` - callback triggered when user select date
+
+
+
+
