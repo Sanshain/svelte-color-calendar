@@ -95,7 +95,7 @@ const app = new Calendar({
         selectedDate: new Date,        
         startMonth: new Date(2021, 11),
         endMonth: new Date(2022, 11),
-        onSelect: e => console.log(e.detail.selectedDate)
+        onSelect: date => console.log(date)
     }
 });
 
