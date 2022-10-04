@@ -1,5 +1,6 @@
 import Calendar from './Calendar.svelte';
 
+
 type CalendarOptions = {
 	placeholder?: string,
 	blank?: boolean,
@@ -7,12 +8,17 @@ type CalendarOptions = {
 	startMonth?: Date,
 	endMonth?: Date,
 	selectInitialDate?: false,
-	onSelect?: CustomEvent<{ selectedDate: Date }>
+	onSelect?: CustomEvent<{ selectedDate: Date }>,
+	customWeekdayValues: string[],
+	customMonthValues: string[]
 };
 
 type CalendarGenerate = (el: HTMLElement, op: CalendarOptions) => Calendar
 
-const createCalendar: CalendarGenerate = (target: HTMLElement, { placeholder = '-', blank, selectedDate, startMonth, endMonth, selectInitialDate = false, onSelect}) => new Calendar({
+const createCalendar: CalendarGenerate = (target: HTMLElement, {
+		placeholder = '-', blank, selectedDate, startMonth, endMonth, selectInitialDate = false, onSelect, customWeekdayValues, customMonthValues
+	}) => new Calendar({
+
 	target: target,
 	props: {
 		onSelect,
@@ -21,7 +27,11 @@ const createCalendar: CalendarGenerate = (target: HTMLElement, { placeholder = '
 		selectedDate: selectedDate || new Date,
 		startMonth,
 		endMonth,
-		selectInitialDate
+		selectInitialDate,
+		customWeekdayValues,
+		customMonthValues
+		// customWeekdayValues: new Array(7).fill(0).map((_, i) => i + 1 + ''),
+		// customMonthValues: new Array(12).fill(0).map((_, i) => i + 1 + '')
 	}
 });
 

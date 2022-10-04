@@ -36,6 +36,12 @@
 	export let endMonth: Date = null;
 	export let selectInitialDate = true;
 
+	/**
+	 * @example: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+	 */
+	export let customMonthValues = null;
+	export let customWeekdayValues = null;
+
 	export let onSelect = null;
 	
 
@@ -53,9 +59,10 @@
 			id: "#calendar",
 			calendarSize: "small",
 			currentDate: selectedDate || new Date(),
-			startMonth,
-			endMonth,
 			selectInitialDate,
+
+			startMonth, endMonth,			
+			customMonthValues, customWeekdayValues,
 			// eventsData:[
 			// 	{
 			// 		start: '2022-09-17T06:00:00',
@@ -112,7 +119,8 @@
 		cursor: pointer;
 	}
 	#calendar{
-		display: none;			
+		display: none;	
+		position: relative;		
 	}
 	// .input:focus{
 	// 	box-shadow: 0 0 5px #999;

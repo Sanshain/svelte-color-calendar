@@ -12,6 +12,11 @@
   overflow: hidden;
   font-family: var(--cal-font-family-body);
   font-size: 1rem;
+
+  position: absolute;
+  left: 0;
+  right: auto;
+  z-index: 10;
 }
 
 .color-calendar .disable {
