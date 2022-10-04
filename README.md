@@ -9,6 +9,7 @@ Ready to production calendar with the possibility of limiting the choice of date
 
 - An improved [color-calendar](https://github.com/PawanKolhe/color-calendar) is used under the hood 
 - Possibility of limiting the choice of dates by month
+- Small size - 23.1kb (minified)
 - Easy integration with any framework
 
 ## Installation
@@ -137,6 +138,12 @@ Look up the [Demo](https://coding-style.ru/code_reviews/296/edit)
 
 `onSelect?: (date: Date) => void` - callback triggered when user select date
 
+### customShortMonthValues
 
+`customShortMonthValues?: string[] = null` - list of short months names
+
+### customWeekdayValues
+
+`customWeekdayValues?: string[] = null` - list of week day names
 
 
