@@ -6,14 +6,16 @@
   ],
   "main": "calendar.js",
   "svelte": "src/Calendar.svelte",
-  "browser": "public/build/bundle.js",
-  "unpkg": "./public/build/bundle.cjs.js",  
+  "browser": "public/build/bundle.esm.js",
+  "unpkg": "./public/build/bundle.js",
+  "cdn": "./public/build/bundle.umd.js",
+  "module": "./public/build/bundle.cjs.js",
   "author": {
     "name": "Sanshain",
     "url": "https://github.com/Sanshain"
   },
   "homepage": "https://github.com/Sanshain/svelte-color-calendar",
-  "version": "1.1.17",
+  "version": "1.1.22",
   "private": false,
   "scripts": {
     "build": "rollup -c",
