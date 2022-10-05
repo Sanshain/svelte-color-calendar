@@ -34,12 +34,16 @@ function serve() {
 }
 
 export default {
-	input: 'src/main.ts',
+	input: './src/main.ts',
+	// input: './src/Calendar.svelte',
 	output: {
 		sourcemap: true,
 		format: 'iife',
-		name: 'createCalendar',
+		name: 'createCalendar',		
 		file: 'public/build/bundle.js',
+		// format: 'cjs',
+		// name: 'Calendar',
+		// file: './common.js',
 	},
 	plugins: [
 		svelte({

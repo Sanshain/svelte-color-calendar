@@ -9,14 +9,14 @@ type CalendarOptions = {
 	endMonth?: Date,
 	selectInitialDate?: false,
 	onSelect?: CustomEvent<{ selectedDate: Date }>,
-	customWeekdayValues: string[],
-	customMonthValues: string[]
+	weekdayValues: string[],
+	shortMonthValues: string[]
 };
 
 type CalendarGenerate = (el: HTMLElement, op: CalendarOptions) => Calendar
 
 const createCalendar: CalendarGenerate = (target: HTMLElement, {
-		placeholder = '-', blank, selectedDate, startMonth, endMonth, selectInitialDate = false, onSelect, customWeekdayValues, customMonthValues
+		placeholder = '-', blank, selectedDate, startMonth, endMonth, selectInitialDate = false, onSelect, weekdayValues, shortMonthValues
 	}) => new Calendar({
 
 	target: target,
@@ -28,8 +28,8 @@ const createCalendar: CalendarGenerate = (target: HTMLElement, {
 		startMonth,
 		endMonth,
 		selectInitialDate,
-		customWeekdayValues,
-		customMonthValues
+		shortMonthValues,
+		weekdayValues
 		// customWeekdayValues: new Array(7).fill(0).map((_, i) => i + 1 + ''),
 		// customMonthValues: new Array(12).fill(0).map((_, i) => i + 1 + '')
 	}
