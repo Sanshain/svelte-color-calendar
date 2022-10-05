@@ -63,38 +63,51 @@ export default app;
 ```
 
 
-Предварительно:
-import { h } from 'preact';
-import { render } from 'preact';
-import { useState, useEffect, useRef } from "preact/hooks";
-import Calendar from 'svelte-color-calendar';
+### React:
 
-const App =  () => {
+```jsx
+import { useEffect, useRef, useState } from "react";
+import Calendar from "svelte-color-calendar";
 
-    const inputContainer = useRef(null);
-    let [date, setDate] = useState('');
+export default function App() {
+  const inputContainer = useRef(null);
+  let [date, setDate] = useState("?");
+  const isRunned = useRef(false);
 
-    useEffect(() => {
-                                       
-        let widget = new Calendar({
-            target: inputContainer.current,
-            props: {
-                blank: false,
-                selectedDate: new Date,        
-                onSelect: e => setDate(e.detail.selectedDate)
-            }
-        })        
-        return () => {};
-    }, []);    
+  useEffect(() => {
+    if (!isRunned.current) isRunned.current = true;
+    else {
+      new Calendar({
+        target: inputContainer.current,
+        props: {
+          blank: false,
+          selectedDate: new Date(),
+          onSelect: (date) => setDate(date.toLocaleDateString())
+        }
+      });
+    }
 
-    return <div className="App">        
-        <div ref={inputContainer}></div>
-        <b>{date}</b>        
+    return () => {};
+  }, []);
+
+  return (
+    <div>
+      <h1>Date:</h1>
+      <div ref={inputContainer}></div>
+      <b>{date}</b>
     </div>
-};
+  );
+}
+```
 
-render(<App />, document.body);
-Ваниль (эсм):
+Рабочий пример с [React 17](https://coding-style.ru/code_reviews/315/edit?compiler=html) и [18](https://codesandbox.io/s/stupefied-yonath-9u7h4x?file=/src/App.js)
+
+
+### Чистый javascript 
+
+- C модулями:
+
+```js
 import Calendar from 'svelte-color-calendar';
 
 const app = new Calendar({
@@ -110,34 +123,26 @@ const app = new Calendar({
 });
 
 export default app;
-Ваниль:
-Посмотрите демо
+```
 
-Опции
-выбраннаяДата
-selectedDate?: Date = new Date- выбранная дата. По умолчанию используется сегодня
 
-пустой
-blank?: boolean = true- использовать для пустого начального значения. Для достижения желаемого эффекта используйтеselectInitialDate: false
+## Опции
 
-выберитеInitialDate
-selectInitialDate?: false- показать или скрыть текущую дату перед выбором (по умолчанию сегодня или первый день месяца будут неявно выделены как текущие до выбора пользователя)
+`selectedDate?: Date = new Date` - выбранная дата. По умолчанию используется сегодня
 
-заполнитель
-placeholder?: string = '-'- действует только с blank = true- иначе будет отображаться текущая дата
+`blank?: boolean = true` - использовать для пустого начального значения. Для достижения желаемого эффекта используйтеselectInitialDate: false
 
-startMonth
-startMonth?: Date- дата начала месяца допустимого выбора
+`selectInitialDate?: false` - показать или скрыть текущую дату перед выбором (по умолчанию сегодня или первый день месяца будут неявно выделены как текущие до выбора пользователя)
 
-конец месяца
-endMonth?: Date- дата окончания месяца допустимого выбора
+`placeholder?: string = '-'` - действует только с blank = true- иначе будет отображаться текущая дата
 
-onSelect
-onSelect?: (date: Date) => void- обратный вызов срабатывает, когда пользователь выбирает дату
+`startMonth?: Date` - дата начала месяца допустимого выбора
 
-ShortMonthValues
-shortMonthValues?: string[] = null- список коротких названий месяцев
+`endMonth?: Date` - дата окончания месяца допустимого выбора
 
-день неделиЗначения
-weekdayValues?: string[] = null- список названий дней недели
+`onSelect?: (date: Date) => void` - обратный вызов срабатывает, когда пользователь выбирает дату
+
+`shortMonthValues?: string[] = null` - список коротких названий месяцев
+
+`weekdayValues?: string[] = null` - список названий дней недели
 
