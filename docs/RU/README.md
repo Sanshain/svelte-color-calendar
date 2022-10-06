@@ -11,7 +11,7 @@
 
 Особенностью этого календаря является:
 - Возможность ограничения выбора дат по месяцам
-- Небольшой размер - 23,1 КБ (уменьшенный)
+- Относительно небольшой размер - 25 KB *(для Svelte проекта)* или 27.8 КБ *(в umd/esm формат)*
 - Простая интеграция с любым фреймворком
 
 ## Установка:
@@ -145,4 +145,17 @@ export default app;
 `shortMonthValues?: string[] = null` - список коротких названий месяцев
 
 `weekdayValues?: string[] = null` - список названий дней недели
+
+
+## Альтернативы: 
+
+Таблица сравнения возможсностей популярных календарей svelte:
+
+Календарь                                                                       | размер бандла | возможность ограничения в выборе дат | выбор диапазона 
+-|-|-|-
+**[svelte-color-calendar](https://github.com/Sanshain/svelte-color-calendar)**  | 25 кб         | по месяцам                           | -          |
+[svelte-calendar](https://github.com/6eDesign/svelte-calendar)                  | 45 кб         | по дням                              | -          |
+[svelte-flatpickr](https://github.com/jacobmischka/svelte-flatpickr)            | 51 кб         | по дням                              | есть       |
+[svelte-mui/Datepicker](https://svelte-mui.vercel.app/datepicker)               | 48 кб         | -                                    | -          |
+
 
