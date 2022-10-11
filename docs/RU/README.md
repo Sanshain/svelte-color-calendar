@@ -154,15 +154,22 @@ export default app;
 Календарь                                                                       | размер бандла       | возможность ограничения в выборе дат | выбор диапазона 
 -|-|-|-
 **[svelte-color-calendar](https://github.com/Sanshain/svelte-color-calendar)**  | 25 кб               | по месяцам                           | -          |
+**Svelte:**:
 [sve-calendar](https://github.com/Sanshain/sve-calendar/tree/sv-calendar)       | 31 кб               | по дням                              | -          |
 [svelte-calendar](https://github.com/6eDesign/svelte-calendar)                  | 45 кб               | по дням                              | -          |
 [svelte-flatpickr](https://github.com/jacobmischka/svelte-flatpickr)            | 51 кб               | по дням                              | *есть \**  |
 [svelte-datepicker](https://github.com/andrew-secret/svelte-datepicker)         | 27 кб *+123 кб\*\** | по дням                              | -          |
 [svelte-mui/Datepicker](https://svelte-mui.vercel.app/datepicker)               | 48 кб               | -                                    | -          |
-**Прочие**:
+**React (preact)**:
+[datepickerdate](https://github.com/kilgarenone/datepicker)                     | 9 кб *+18 кб\*\**   | -                                    | -          |
 [react-calendar](https://github.com/wojtekmaj/react-calendar)                   | 57 кб *+18 кб\*\**  | по дням                              | есть       |
+[react-day-picker](https://github.com/gpbl/react-day-picker)                    | 58 кб *+18 кб\*\**  | -                                    | есть       |
 [react-date-range](https://www.npmjs.com/package/react-date-range)              | 78 кб *+18 кб\*\**  | по дням                              | есть       |
+[react-datepicker](https://reactdatepicker.com/#example-date-range)             | 263 кб *+18 кб\*\** | по дням                              | есть       |
 [rc-calendar](https://github.com/wojtekmaj/react-calendar)                      | 331 кб *+18 кб\*\** | ?                                    | ?          |
+**Vue** :
+[vuejs-datepicker](https://www.npmjs.com/package/vuejs-datepicker)              | 39 кб *+95 кб\*\**  | по дням                              | -          |
+[vue2-datepicker](https://www.npmjs.com/package/vue2-datepicker)                | 64 кб *+95 кб\*\**  | есть                                 | есть       |
 [v-calendar](https://github.com/nathanreyes/v-calendar)                         | 206 кб *+95 кб\*\** | по дням                              | есть       |
 
 - \* - у svelte-flatpickr выбор диапазона доступен только в пределах одного месяца
