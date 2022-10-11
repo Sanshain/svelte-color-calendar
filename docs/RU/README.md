@@ -149,14 +149,21 @@ export default app;
 
 # Обзор 
 
-Таблица сравнения возможностей с популярными календарей svelte:
+Таблица сравнения возможностей с популярными календарями svelte и прочими:
 
-Календарь                                                                       | размер бандла | возможность ограничения в выборе дат | выбор диапазона 
+Календарь                                                                       | размер бандла       | возможность ограничения в выборе дат | выбор диапазона 
 -|-|-|-
-**[svelte-color-calendar](https://github.com/Sanshain/svelte-color-calendar)**  | 25 кб         | по месяцам                           | -          |
-[sve-calendar](https://github.com/Sanshain/sve-calendar/tree/sv-calendar)       | 31 кб         | по дням                              | -          |
-[svelte-calendar](https://github.com/6eDesign/svelte-calendar)                  | 45 кб         | по дням                              | -          |
-[svelte-flatpickr](https://github.com/jacobmischka/svelte-flatpickr)            | 51 кб         | по дням                              | есть       |
-[svelte-mui/Datepicker](https://svelte-mui.vercel.app/datepicker)               | 48 кб         | -                                    | -          |
+**[svelte-color-calendar](https://github.com/Sanshain/svelte-color-calendar)**  | 25 кб               | по месяцам                           | -          |
+[sve-calendar](https://github.com/Sanshain/sve-calendar/tree/sv-calendar)       | 31 кб               | по дням                              | -          |
+[svelte-calendar](https://github.com/6eDesign/svelte-calendar)                  | 45 кб               | по дням                              | -          |
+[svelte-flatpickr](https://github.com/jacobmischka/svelte-flatpickr)            | 51 кб               | по дням                              | *есть \**  |
+[svelte-datepicker](https://github.com/andrew-secret/svelte-datepicker)         | 27 кб *+123 кб\*\** | по дням                              | -          |
+[svelte-mui/Datepicker](https://svelte-mui.vercel.app/datepicker)               | 48 кб               | -                                    | -          |
+[react-calendar](https://github.com/wojtekmaj/react-calendar)                   | 57 кб *+18 кб\*\**  | по дням                              | есть       |
+[v-calendar](https://github.com/nathanreyes/v-calendar)                         | 206 кб *+95 кб\*\** | по дням                              | есть       |
+
+- \* - у svelte-flatpickr выбор диапазона доступен только в пределах одного месяца
+- \*\* - требуют для своей работы установки дополнительных пакетов
+
 
 
