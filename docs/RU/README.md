@@ -149,7 +149,7 @@ export default app;
 
 # Обзор 
 
-Таблица сравнения возможностей с популярными календарями svelte и прочими:
+Таблица сравнения возможностей с популярными календарями svelte:
 
 Календарь                                                                       | размер бандла       | возможность ограничения в выборе дат | выбор диапазона 
 -|-|-|-
@@ -159,7 +159,10 @@ export default app;
 [svelte-flatpickr](https://github.com/jacobmischka/svelte-flatpickr)            | 51 кб               | по дням                              | *есть \**  |
 [svelte-datepicker](https://github.com/andrew-secret/svelte-datepicker)         | 27 кб *+123 кб\*\** | по дням                              | -          |
 [svelte-mui/Datepicker](https://svelte-mui.vercel.app/datepicker)               | 48 кб               | -                                    | -          |
+**Прочие**:
 [react-calendar](https://github.com/wojtekmaj/react-calendar)                   | 57 кб *+18 кб\*\**  | по дням                              | есть       |
+[react-date-range](https://www.npmjs.com/package/react-date-range)              | 78 кб *+18 кб\*\**  | по дням                              | есть       |
+[rc-calendar](https://github.com/wojtekmaj/react-calendar)                      | 331 кб *+18 кб\*\** | ?                                    | ?          |
 [v-calendar](https://github.com/nathanreyes/v-calendar)                         | 206 кб *+95 кб\*\** | по дням                              | есть       |
 
 - \* - у svelte-flatpickr выбор диапазона доступен только в пределах одного месяца
