@@ -173,6 +173,10 @@ export default app;
 [vuejs-datepicker](https://www.npmjs.com/package/vuejs-datepicker)              | 39 кб *+95 кб\*\**  | по дням                              | -          |
 [vue2-datepicker](https://www.npmjs.com/package/vue2-datepicker)                | 64 кб *+95 кб\*\**  | есть                                 | есть       |
 [v-calendar](https://github.com/nathanreyes/v-calendar)                         | 206 кб *+95 кб\*\** | по дням                              | есть       |
+**Прочие**:
+[bootstrap-datepicker](https://bootstrap-datepicker.readthedocs.io/en/latest/)  | 33 кб *+70 кб\*\**  | по дням                              | -          |
+[daterangepicker](http://www.daterangepicker.com/)                              | 33 кб *+120 кб\*\** | по дням                              | есть       |
+
 
 - \* - у svelte-flatpickr выбор диапазона доступен только в пределах одного месяца
 - \*\* - требуют для своей работы установки дополнительных пакетов
