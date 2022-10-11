@@ -19,10 +19,10 @@ npm i svelte-color-calendar
 ```
 
 - [Usage](#usage)
-    - [Svelte](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#svelte)
-    - [Preact](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#preact)
-    - [Vanila (esm](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#vanila-esm)
-    - [Vanila](https://github.com/Sanshain/svelte-color-calendar/edit/master/README.md#vanila)
+    - [Svelte](#svelte)
+    - [Preact](#preact)
+    - [Vanila (esm)](#vanila-esm)
+    - [Vanila](#vanila)
 - [Options](#options)
     - [selectedDate](#selecteddate)
     - [blank](#blank)
