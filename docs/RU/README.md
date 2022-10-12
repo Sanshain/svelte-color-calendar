@@ -158,6 +158,7 @@ export default app;
 **Svelte**:
 **[svelte-color-calendar](https://github.com/Sanshain/svelte-color-calendar)**  | 25 кб               | по месяцам                           | -          |
 [sve-calendar](https://github.com/Sanshain/sve-calendar/tree/sv-calendar)       | 31 кб               | по дням                              | -          |
+[svelty-picker](https://github.com/mskocik/svelty-picker)                       | 44 кб               | по дням                              | -          |
 [svelte-calendar](https://github.com/6eDesign/svelte-calendar)                  | 45 кб               | по дням                              | -          |
 [svelte-flatpickr](https://github.com/jacobmischka/svelte-flatpickr)            | 51 кб               | по дням                              | *есть \**  |
 [svelte-datepicker](https://github.com/andrew-secret/svelte-datepicker)         | 27 кб *+123 кб\*\** | по дням                              | -          |
