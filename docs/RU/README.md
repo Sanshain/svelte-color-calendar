@@ -156,7 +156,7 @@ export default app;
 Календарь                                                                       | размер бандла       | возможность ограничения в выборе дат | выбор диапазона 
 -|-|-|-
 **Svelte**:
-**[svelte-color-calendar](https://github.com/Sanshain/svelte-color-calendar)**  | 25 кб               | по месяцам                           | -          |
+**[svelte-color-calendar](https://github.com/Sanshain/svelte-color-calendar)**  | 27 кб               | по месяцам                           | -          |
 [sve-calendar](https://github.com/Sanshain/sve-calendar/tree/sv-calendar)       | 31 кб               | по дням                              | -          |
 [svelty-picker](https://github.com/mskocik/svelty-picker)                       | 44 кб               | по дням                              | -          |
 [svelte-calendar](https://github.com/6eDesign/svelte-calendar)                  | 45 кб               | по дням                              | -          |
